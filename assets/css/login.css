@@ -1,0 +1,47 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/assets/images/login_bg.jpg') no-repeat center;
+    background-size: cover; /*自适应，等比例拉伸*/
+}
+/*登录注册区域*/
+.loginAndRegister{
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -155px;
+}
+.title-login{ /*登录标题*/
+    height: 60px;
+    background: url('/assets/images/login_title.png') no-repeat center;
+}
+.register-box{ /*注册div，默认隐藏*/
+    display: none;
+}
+.layui-form{ /*登录表单的内边距*/
+    padding: 0 30px;
+}
+.links{ /*a标签切换按钮靠右显示*/
+    display: flex;
+    /*justify-content 设置主轴上的子元素排列方式*/
+    justify-content: flex-end; /*从尾部开始排列*/
+}
+/*用户名 和 密码的小图片*/
+.layui-form-item {
+    position: relative;
+}
+.layui-form-item input{  
+    padding-left: 32px;
+}
+.layui-form-item i{
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+}
