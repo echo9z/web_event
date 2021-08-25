@@ -39,7 +39,7 @@ function renderAvatar(userData){
     $('#welcome').html('欢迎 '+name);//2.渲染欢迎文本用户名
     //3.如果用户的没有头像。隐藏img图片，渲染文字图像
     if(userData.user_pic !== null){//3.1有头像，渲染图像
-        $('#layui-nav-img').attr('src',userData.user_pic).show();
+        $('.layui-nav-img').attr('src',userData.user_pic).show();
         $('.text-avatar').hide();
     }else{ //没有图片图像，渲染文字图像
         $('.layui-nav-img').hide();

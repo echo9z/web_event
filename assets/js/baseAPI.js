@@ -12,7 +12,7 @@ $.ajaxPrefilter(function (options){
 
     //设置全局统一挂在complete回调函数
     options.complete = function (response){//ajax 无论请求是否存在都执行complete函数
-        console.log(response);
+        //console.log(response);
         //在complete回调函数中，可以使用res.responseJSON拿到服务器响应的数据
         if(response.responseJSON.status === 1 && response.responseJSON.message ==="身份认证失败！"){
             //1.强制清空token
