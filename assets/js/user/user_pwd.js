@@ -27,7 +27,7 @@ $(function (){
             data: $(this).serialize(),
             success: function (response) {
                 if(response.status !== 0){
-                    layer.msg(response.message);
+                    return layer.msg(response.message);
                 }
                 layer.msg(response.message);
                 //重置表单

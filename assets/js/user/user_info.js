@@ -22,7 +22,7 @@ $(function (){
                 if(response.status !== 0){
                     return layer.msg(response.message);
                 }
-                //将响应数据，初始化到form表单中，使用layui中表单赋值
+                //将响应数据，初始化到form表单中，使用layui中表单赋值，但form表单必须添加lay-filter属性
                 form.val('userInfo',response.data); //layui表单中的快速赋值
             }
         });
@@ -44,7 +44,7 @@ $(function (){
             data: $(this).serialize(),
             success: function (response) {
                 if(response.status !==0 ){
-                    layer.msg(response.message)
+                    return layer.msg(response.message)
                 }
                 layer.msg(response.message);
                 //调用父页面中的方法，重新渲染用户的头像 和用户的信息

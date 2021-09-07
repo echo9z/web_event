@@ -73,7 +73,8 @@ $(function (){
                 //5.将用户 token 令牌认证，存储到本地localStorage 中
                 localStorage.setItem('token',response.token)
                 //6.跳转后台首页
-                location.href = './index.html'
+                location.href = '/index.html';
+                console.log(location.href);
             }
         });
     });

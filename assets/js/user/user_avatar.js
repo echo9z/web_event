@@ -50,7 +50,7 @@ $(function (){
             data: {avatar:dataURL},  //请求体 为base64格式图片
             success: function (response) {
                 if(response.status !== 0){
-                    layer.msg(response.message);
+                    return layer.msg(response.message);
                 }
                 layer.msg(response.message);
                 window.parent.getUserInfo(); //重新渲染用户头像
